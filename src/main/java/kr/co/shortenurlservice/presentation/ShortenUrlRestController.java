@@ -1,6 +1,7 @@
 package kr.co.shortenurlservice.presentation;
 
 import kr.co.shortenurlservice.application.SimpleShortenUrlService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -13,6 +14,7 @@ import java.net.URISyntaxException;
 import java.util.List;
 
 @RestController
+@Slf4j
 public class ShortenUrlRestController {
 
     private SimpleShortenUrlService simpleShortenUrlService;
@@ -26,6 +28,8 @@ public class ShortenUrlRestController {
     public ResponseEntity<ShortenUrlCreateResponseDto> createShortenUrl(
             @Valid @RequestBody ShortenUrlCreateRequestDto shortenUrlCreateRequestDto
     ) {
+        //  trace : 가장 세부적인 수준의 로그로, 코드의 세부적인 실행 경로를 추적할 때 사용
+        log.trace("shortenUrlCreateRequestDto {}", shortenUrlCreateRequestDto);
         ShortenUrlCreateResponseDto shortenUrlCreateResponseDto =
                 simpleShortenUrlService.generateShortenUrl(shortenUrlCreateRequestDto);
         return ResponseEntity.ok(shortenUrlCreateResponseDto);
