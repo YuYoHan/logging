@@ -1,0 +1,13 @@
+2025-02-20 16:46:01 [main] INFO  k.c.s.ShortenurlserviceApplication - Starting ShortenurlserviceApplication using Java 17.0.6 with PID 23624 (C:\study_\springBoot\shorten-url-for-logging\target\classes started by user in C:\study_\springBoot\shorten-url-for-logging)
+2025-02-20 16:46:01 [main] DEBUG k.c.s.ShortenurlserviceApplication - Running with Spring Boot v3.0.1, Spring v6.0.3
+2025-02-20 16:46:01 [main] INFO  k.c.s.ShortenurlserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-20 16:46:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2025-02-20 16:46:01 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-02-20 16:46:01 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-20 16:46:01 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.4]
+2025-02-20 16:46:02 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-20 16:46:02 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 929 ms
+2025-02-20 16:46:02 [main] DEBUG k.c.s.presentation.LogginFilter - Filter 'logginFilter' configured for use
+2025-02-20 16:46:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-02-20 16:46:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2025-02-20 16:46:02 [main] INFO  k.c.s.ShortenurlserviceApplication - Started ShortenurlserviceApplication in 1.725 seconds (process running for 3.58)
